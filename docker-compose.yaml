@@ -6,7 +6,7 @@ services:
     ports:
       - "1234:1234"
     environment:
-      Name: TopMen
+      Name: TopMen 2 the return
       Mode: ra
       ListenPort: 1234
       ExternalPort: 1234
