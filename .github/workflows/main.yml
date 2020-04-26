@@ -30,4 +30,4 @@ jobs:
       env:
         TARGET_HOST: ${{ secrets.TARGET_HOST_IP }}
       run: |
-        scp $GITHUB_WORKSPACE/docker-compose.yaml root@"$TARGET_HOST":~
+        scp -o StrictHostKeyChecking=no $GITHUB_WORKSPACE/docker-compose.yaml root@"$TARGET_HOST":~
