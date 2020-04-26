@@ -32,4 +32,4 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no root@"$TARGET_HOST" 'docker-compose down'
         scp -o StrictHostKeyChecking=no $GITHUB_WORKSPACE/docker-compose.yaml root@"$TARGET_HOST":~
-        ssh -o StrictHostKeyChecking=no root@"$TARGET_HOST" 'docker-compose down'
+        ssh -o StrictHostKeyChecking=no root@"$TARGET_HOST" 'docker-compose up -d'
