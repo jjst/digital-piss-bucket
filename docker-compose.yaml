@@ -1,7 +1,7 @@
 version: '3'
 services:
   openra:
-    image: rmoriz/openra
+    image: rmoriz/openra:20200503
     container_name: openra
     ports:
       - "1234:1234"
